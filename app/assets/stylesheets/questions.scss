@@ -1,0 +1,47 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$white: #ffffff;
+$gray: #cfcfcf;
+$yellow: #fffccd;
+$black: #000000;
+$dark-gray: #5a5a5a;
+
+// ASK
+.question-box {
+  display: flex;
+  justify-content: center;
+}
+
+// ANSWER
+.card {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.left-border {
+  padding: 3px;
+  background-color: $gray;
+}
+
+.question {
+  background-color: $white;
+  padding: 0 16px;
+  flex-grow: 1;
+}
+
+.answer {
+  background-color: $yellow;
+  padding: 0 16px;
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+a:hover {
+  color: $dark-gray;
+}

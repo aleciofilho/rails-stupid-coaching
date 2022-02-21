@@ -1,0 +1,26 @@
+<h1>Stupid Coaching</h1>
+
+<div class="card">
+  <div class="left-border"></div>
+  <div class="question">
+    <p><%= params[:question]%></p>
+    <p>-You</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="left-border"></div>
+  <div class="answer">
+    <% if params[:question].downcase == 'I am going to work'.downcase %>
+      <p><strong><%= 'Great!' %></strong></p>
+    <% elsif params[:question].ends_with?('?') %>
+      <p><strong><%= 'Silly question, get dressed and go to work!' %></strong></p>
+    <% else %>
+      <p><strong><%= "I don't care, get dressed and go to work!" %></strong></p>
+    <% end %>
+    <p>-Your coach</p>
+  </div>
+</div>
+
+
+<%= link_to 'Ask a new question', ask_path %>
